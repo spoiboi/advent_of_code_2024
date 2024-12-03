@@ -13,6 +13,7 @@ right_list.sort()
 
 # sum of difs
 sum = 0
+sum2 = 0
 """
 print(left_list[0])
 print(right_list[0])
@@ -21,6 +22,8 @@ print(abs(left_list[0]-right_list[0]))
 
 for i in range(len(left_list)):
     sum += (abs(left_list[i]-right_list[i]))
+    sum2 += left_list[i] * right_list.count(left_list[i])
 
 print(sum)
+print(sum2)
 
